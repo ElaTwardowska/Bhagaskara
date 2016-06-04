@@ -6,4 +6,10 @@ css/
 fonts/
 images/
 Bhagaskara.psd
-js/
+js/ bootstrap.js
+js/bootstrap.min
+js/jquery.lazylinepainter-1.7.0.min.js
+js/npm.js
+Bhagaskara-assets/
+lazy-line-painter-master/
+Bhagaskara.psd
