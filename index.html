@@ -11,6 +11,7 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +21,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="noIE">
 
   <div class="cityview">
     <div class="container">
@@ -78,12 +79,12 @@
         <div class="col-xs-12 col-sm-12 col-md-7 menu-elem">
           <ul class="menu-items">
             <li class="menu-item"> <a href="#">Home</a> </li>
-            <li class="menu-item"><a href="#">About</a></li>
-            <li class="menu-item"><a href="#">Team</a></li>
-            <li class="menu-item"><a href="#">Services</a></li>
-            <li class="menu-item"><a href="#">Portfolio</a></li>
-            <li class="menu-item"><a href="#">Blog</a></li>
-            <li class="menu-item"><a href="#">Contact</a></li>
+            <li class="menu-item"><a href="#about">About</a></li>
+            <li class="menu-item"><a href="#team">Team</a></li>
+            <li class="menu-item"><a href="#services">Services</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#blog">Blog</a></li>
+            <li class="menu-item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -129,7 +130,7 @@
     </div>
   </div>
 
-  <div class="about">
+  <div class="about" id="about">
     <div class="container about-content">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-5"></div>
@@ -142,17 +143,16 @@
         <div class="col-xs-12 col-sm-12 col-md-7"><img class="mockup img-responsive" src="images/mockup.png"></div>
         <div class="col-xs-12 col-sm-12 col-md-5">
           <div class="about-inner">
-          <div class="about_text"> Aliquam metus neque, bibendum sit amet porta at, consequat et enim. In ut turpis non ipsum rhoncus porttitor vel ac nunc. Maecenas interdum dignissim lorem quis auctor. Donec sit amet nulla nisl, aliquam pretium ipsum. Pellentesque sodales ipsum
-            et enim rutrum adipiscing. Quisque tincidunt mattis sapien, vel posuere.</div>
-          <div class="btn_learn">Learn more</div>
-        </div>
+            <div class="about_text"> Aliquam metus neque, bibendum sit amet porta at, consequat et enim. In ut turpis non ipsum rhoncus porttitor vel ac nunc. Maecenas interdum dignissim lorem quis auctor. Donec sit amet nulla nisl, aliquam pretium ipsum. Pellentesque sodales
+              ipsum et enim rutrum adipiscing. Quisque tincidunt mattis sapien, vel posuere.</div>
+            <div class="btn_learn"><a href="#">Learn more</a></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="quote">
-    <!-- <div class="bg"></div> -->
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -163,9 +163,9 @@
     </div>
   </div>
 
-  <div class="team">
-    <div class="container team_row">
-      <div class="row">
+  <div class="team" id="team">
+    <div class="container">
+      <div class="row team_row">
         <div class="col-xs-12 col-sm-12 col-md-4"></div>
         <div class="col-xs-12 col-sm-12 col-md-4">
           <div class="img_team"></div>
@@ -175,135 +175,411 @@
       <div class="row">
         <div class="col-xs-3 col-sm-4 col-md-5"></div>
         <div class="col-xs-3 col-sm-2 col-md-1">
-          <div class="img_arrow_left"></div>
+          <div class="img_arrow_left prevBtn"></div>
         </div>
         <div class="col-xs-3 col-sm-2 col-md-1">
-          <div class="img_arrow_right"></div>
+          <div class="img_arrow_right nextBtn"></div>
         </div>
         <div class="col-xs-3 col-sm-4 col-md-5"></div>
       </div>
+
       <div class="row">
+        <div class="col-md-12">
+          <div class="slider">
+
+            <ul class="team_list">
+
+              <li class="team_list_item clearfix">
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>Anne Hathaway</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>Anne Hathaway</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>Anne Hathaway</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="team_list_item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>Ella</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>Ella</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>Ellay</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="team_list_item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>johnatan</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>johnatan</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="team_content">
+                      <img src="images/Mugshot.png" alt="foto">
+                      <div class="caption">
+                        <h3>johnatan</h3>
+                        <p>CEO / Marketing Guru</p>
+                        <div>
+                          <a href="#" class="btn btn-fb" role="button"></a>
+                          <a href="#" class="btn btn-gg" role="button"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
         <div class="col-md-4">
-          <div class="team_content">
-            <img src="images/Mugshot.png" alt="foto">
-            <div class="caption">
-              <h3>Anne Hathaway</h3>
-              <p>CEO / Marketing Guru</p>
-              <div>
-                <a href="#" class="btn btn-fb" role="button"></a>
-                <a href="#" class="btn btn-gg" role="button"></a>
+          <div class="img_skills"></div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row progress-row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="progress-content">
+            <div class="progress_title">Web design</div>
+            <div class="progress_value">90%</div>
+            <div class="bar-border">
+              <div class="bar1" role="progressbar" style="width: 0%">
+                90%
               </div>
             </div>
           </div>
         </div>
-          <div class="col-md-4">
-            <div class="team_content">
-              <img src="images/Mugshot.png" alt="foto">
-              <div class="caption">
-                <h3>Anne Hathaway</h3>
-                <p>CEO / Marketing Guru</p>
-                <div>
-                  <a href="#" class="btn btn-fb" role="button"></a>
-                  <a href="#" class="btn btn-gg" role="button"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team_content">
-              <img src="images/Mugshot.png" alt="foto">
-              <div class="caption">
-                <h3>Anne Hathaway</h3>
-                <p>CEO / Marketing Guru</p>
-                <div>
-                  <a href="#" class="btn btn-fb" role="button"></a>
-                  <a href="#" class="btn btn-gg" role="button"></a>
-                </div>
+        <div class="col-md-5">
+          <div class="progress-content">
+            <div class="progress_title">Graphic Design</div>
+            <div class="progress_value">70%</div>
+            <div class="bar-border">
+              <div class="bar2" role="progressbar" style="width: 0%;">
+                70%
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-1"></div>
       </div>
 
-      <div class="skills">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"><div class="img_skills"></div></div>
-            <div class="col-md-4"></div>
-          </div>
-          <div class="row progress-row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-             <div class="progress-content">
-              <div class="progress_title">Web design</div><div class="progress_value">90%</div>
-              <div class="bar-border">
-                <div class="bar1" role="progressbar" style="width: 0%">
-                  90%
-                </div>
+      <div class="row progress-row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="progress-content">
+            <div class="progress_title">html/css </div>
+            <div class="progress_value">75%</div>
+            <div class="bar-border">
+              <div class="bar3" role="progressbar" style="width: 0%;">
+                75%
               </div>
             </div>
           </div>
-            <div class="col-md-5">
-              <div class="progress-content">
-              <div class="progress_title">Graphic Design</div><div class="progress_value">70%</div>
-              <div class="bar-border">
-                <div class="bar2" role="progressbar"style="width: 0%;">
-                  70%
-                </div>
+        </div>
+        <div class="col-md-5">
+          <div class="progress-content">
+            <div class="progress_title">ui/ux</div>
+            <div class="progress_value">85%</div>
+            <div class="bar-border">
+              <div class="bar4" role="progressbar" style="width: 0%;">
+                85%
               </div>
             </div>
           </div>
-            <div class="col-md-1"></div>
-          </div>
-
-          <div class="row progress-row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-             <div class="progress-content">
-              <div class="progress_title">html/css </div><div class="progress_value">75%</div>
-              <div class="bar-border">
-                <div class="bar3" role="progressbar" style="width: 0%;">
-                  75%
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-md-5">
-              <div class="progress-content">
-              <div class="progress_title">ui/ux</div><div class="progress_value">85%</div>
-              <div class="bar-border">
-                <div class="bar4" role="progressbar" style="width: 0%;">
-                  85%
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-md-1"></div>
-          </div>
+        </div>
+        <div class="col-md-1"></div>
       </div>
     </div>
+  </div>
 
-    <div class="services">
-      <div class="container">
-        <div class="row services-row">
-          <div class="col-md-12">
-            <div class="icon_services"></div>
-            <div class="text_services">Our services will lorem and ipsum your aliquam </div>
+  <div class="services animated animatedEntrance" id="services">
+    <div class="container">
+      <div class="row  services-row">
+        <div class="col-md-12">
+          <div class="icon_services animated" data-animation="bounce"></div>
+          <div class="text_services">Our services will lorem and ipsum your aliquam </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="statistics">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 stat_row">
+          <div class="stat">
+            <div class="stat-nr">365</div>
+            <div class="stat_text">lorem ipsum </div>
+          </div>
+          <div class="stat">
+            <div class="stat-nr">98%</div>
+            <div class="stat_text">lorem ipsum </div>
+          </div>
+          <div class="stat">
+            <div class="stat-nr">69</div>
+            <div class="stat_text">lorem ipsum </div>
+          </div>
+          <div class="stat">
+            <div class="stat-nr">1,642</div>
+            <div class="stat_text">lorem ipsum </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <div class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-      <script src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/apps.js"></script>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active carous-item">
+                <div class="row">
+                  <div class="col-md-5"></div>
+                  <div class="col-md-2 test_content"><img src="images/testimonial.png" alt="testimonial"></div>
+                  <div class="col-md-5"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1  ">
+                    <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                      <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
+                    <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carous-item">
+                <div class="row">
+                  <div class="col-md-5"></div>
+                  <div class="col-md-2 test_content"><img src="images/testimonial.png" alt="testimonial"></div>
+                  <div class="col-md-5"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1  ">
+                    <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                      <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
+                    <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carous-item">
+                <div class="row">
+                  <div class="col-md-5"></div>
+                  <div class="col-md-2 test_content"><img src="images/testimonial.png" alt="testimonial"></div>
+                  <div class="col-md-5"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1  ">
+                    <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                      <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
+                    <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="row portfolio_row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="img_portfolio"></div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row portfolio_btns">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <ul class="btns">
+            <li class="btn_all">All</li>
+            <li class="btn_web">web</li>
+            <li class="btn_apps">apps</li>
+            <li class="btn_icons">icons</li>
+          </ul>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+      <div id="gallery">
+        <ul class="first">
+          <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portflio_img1.png">
+          <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+          <p class="tags">apps, icons, ui </p></li>
+          <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img2.png">
+            <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+            <p class="tags">apps, icons, ui </p></li>
+          <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img3.png">
+            <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+            <p class="tags">apps, icons, ui </p></li>
+          <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img4.png">
+            <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+            <p class="tags">apps, icons, ui </p></li>
+          <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img5.png">
+            <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+            <p class="tags">apps, icons, ui </p></li>
+          <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img6.png">
+            <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+            <p class="tags">apps, icons, ui </p></li>
+      </div>
+
+          <div class="btn_watchmore"><a href="#">Watch more</a></div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row contact_row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="img_getintouch"></div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+    <div class="row">
+      <div class = "col-md-6"> </div>
+      <div class = "col-md-6"> </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="js/jquery.bsPhotoGallery.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/waypoints.min.js"></script>
 </body>
 
 </html>
