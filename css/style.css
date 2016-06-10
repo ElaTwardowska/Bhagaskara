@@ -581,11 +581,16 @@ body {
 
 .first {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 .portfolio_title, .tags {
   text-align: center;
+}
+
+a.controls, a.next {
+  margin-right: 250px;
+  margin-left: 15px;
 }
 
 .btn_watchmore {
