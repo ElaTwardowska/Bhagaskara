@@ -588,9 +588,13 @@ body {
   text-align: center;
 }
 
-a.controls, a.next {
-  margin-right: 250px;
-  margin-left: 15px;
+a.next {
+  margin-right: 200px;
+  margin-left: 10px;
+}
+
+a.controls {
+  font-size: 25px;
 }
 
 .btn_watchmore {
@@ -621,4 +625,58 @@ a.controls, a.next {
 .contact_row {
   margin-top: 120px;
   margin-bottom: 120px;
+}
+
+textarea.form-control {
+  max-width: 95%;
+  margin-left: 14px;
+}
+
+.form-control {
+  height: 60px;
+  font-size: 20px;
+  color: black;
+}
+
+.btn-submit {
+  width: 228px;
+  height: 72px;
+  background: #9f449b;
+  border-radius: 10px;
+  box-shadow: 0 5px #6b2e68;
+  margin-top: 33px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 72px;
+}
+
+.info {
+  font-size: 18px;
+}
+
+.address {
+  font-size: 22px;
+  margin-top: 35px;
+}
+
+.button_fb, .button_g, .button_tw {
+  width: 79px;
+  height: 77px;
+  float: left;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.button_fb {
+  background: url("../images/fb.png") no-repeat;
+}
+
+.button_g {
+  background: url("../images/gg.png") no-repeat;
+}
+
+.button_tw {
+  background: url("../images/tw.png") no-repeat;
 }

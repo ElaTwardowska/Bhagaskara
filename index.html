@@ -41,26 +41,38 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4"></div>
         <div class="col-xs-12 col-sm-6 col-md-2">
-          <div class="btn_services header-btn"></div>
+          <a href="#services">
+            <div class="btn_services header-btn"></div>
+          </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-2">
-          <div class="btn_portfolio header-btn"></div>
+          <a href="#portfolio">
+            <div class="btn_portfolio header-btn"></div>
+          </a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4"></div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-2">
-          <div class="btn_about header-btn" id="btn_about"></div>
+          <a href="#about">
+            <div class="btn_about header-btn" id="btn_about"></div>
+          </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-2">
-          <div class="btn_team header-btn"></div>
+          <a href="#team">
+            <div class="btn_team header-btn"></div>
+          </a>
         </div>
         <div class="col-xs-12 col-md-4"></div>
         <div class="col-xs-12 col-sm-6 col-md-2">
-          <div class="btn_blog header-btn"></div>
+          <a href="#blog">
+            <div class="btn_blog header-btn"></div>
+          </a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-2">
-          <div class="btn_contact header-btn"></div>
+          <a href="#contact">
+            <div class="btn_contact header-btn"></div>
+          </a>
         </div>
       </div>
       <div class="row">
@@ -523,29 +535,35 @@
         <div class="col-md-4"></div>
       </div>
 
-        <div id="gallery">
+      <div id="gallery">
         <ul class="first">
           <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portflio_img1.png">
-          <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p></li>
+            <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+            <p class="tags">apps, icons, ui </p>
+          </li>
           <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img2.png">
             <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-            <p class="tags">apps, icons, ui </p></li>
+            <p class="tags">apps, icons, ui </p>
+          </li>
           <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img3.png">
             <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-            <p class="tags">apps, icons, ui </p></li>
+            <p class="tags">apps, icons, ui </p>
+          </li>
           <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img4.png">
             <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-            <p class="tags">apps, icons, ui </p></li>
+            <p class="tags">apps, icons, ui </p>
+          </li>
           <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img5.png">
             <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-            <p class="tags">apps, icons, ui </p></li>
+            <p class="tags">apps, icons, ui </p>
+          </li>
           <li class="portfolio_item"><img data-tag="all web apps icons" src="images/portfolio_img6.png">
             <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-            <p class="tags">apps, icons, ui </p></li>
+            <p class="tags">apps, icons, ui </p>
+          </li>
       </div>
 
-          <div class="btn_watchmore"><a href="#">Watch more</a></div>
+      <div class="btn_watchmore"><a href="#">Watch more</a></div>
     </div>
   </div>
 
@@ -559,18 +577,57 @@
         <div class="col-md-4"></div>
       </div>
 
-    <div class="row">
-      <div class ="col-md-6">
+      <div class="row">
+        <div class="col-md-6">
 
+          <form class="form-horizontal" id="contactForm" method="post">
+
+            <div class="form-group row">
+              <div class="col-sm-12 col-md-12">
+                <input type="email" class="form-control" id="inputEmail3" id="emailInput" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-12 col-md-12">
+                <input type="password" class="form-control" id="inputPassword3" id="PasswordInput" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <textarea class="col-sm-12 col-md-12 form-control" rows="7" id="comment" id="messageInput" placeholder="Your message"></textarea>
+            </div>
+
+            <div class="error"></div>
+
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn-submit">Send email</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div class="contact_info row">
+            <div class="col-md-12">
+              <p class="info"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</h4>
+                <br>
+                <h4 class="address"> 1600 Pennsylvania Ave NW, Washington,<br>DC 20500, United States of America.<br><br> T: (202) 456-1111<br> M: (202) 456-1212<br></p>
+            </div>
+              <div class="col-md-12">
+                  <a href="#"><div class="button_fb"></div></a>
+                  <a href="#"><div class="button_g"></div></a>
+                  <a href="#"><div class="button_tw"></div></a>
+                </div>
+         </div>
 
       </div>
 
-      <div class = "col-md-6"> </div>
 
-      </div>
-
-    </div>
   </div>
+ </div>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
