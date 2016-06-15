@@ -56,7 +56,7 @@ $(function() {
     } else if (currentItem < 0) {
       currentItem = teamItems.length - 1;
     }
-    list.offset({
+    list.animate({
       left: -(currentItem * teamItemsWidth)
     });
   }

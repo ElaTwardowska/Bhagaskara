@@ -13,12 +13,10 @@ body {
 }
 
 .title {
-  color: white;
-  font-size: 90px;
-}
-
-.titleend {
-  color: #9f449b;
+  background: url("../images/Bhagaskara.png");
+  width: 467px;
+  height: 87px;
+  margin-top: 50px;
 }
 
 .title2 {
@@ -326,7 +324,6 @@ body {
 .team_list_item {
   float: left;
   width: 870px;
-  margin-right: 50px;
 }
 
 /*skills*/
@@ -679,4 +676,13 @@ textarea.form-control {
 
 .button_tw {
   background: url("../images/tw.png") no-repeat;
+}
+
+.logo {
+  background: url("../images/Bhagaskara_logo.png");
+  width: 274px;
+  height: 63px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
