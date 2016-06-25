@@ -1,4 +1,5 @@
-2<!DOCTYPE html>
+2
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,10 +10,10 @@
   <title>Bhagaskara</title>
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.css" >
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +29,9 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-1 col-sm-2 col-md-3"></div>
-        <div class="col-xs-10 col-sm-8 col-md-6"><div class="main_title"></div></div>
+        <div class="col-xs-10 col-sm-8 col-md-6">
+          <div class="main_title"></div>
+        </div>
         <div class="col-xs-1 col-sm-2 col-md-3"></div>
       </div>
       <div class="row">
@@ -87,7 +90,9 @@
   <div class="menu-content">
     <div class="container menu-row">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-2 nav-title"><div class="title2"></div></div>
+        <div class="col-xs-12 col-sm-12 col-md-2 nav-title">
+          <div class="title2"></div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-3"></div>
         <div class="col-xs-12 col-sm-12 col-md-7 menu-elem">
           <ul class="menu-items">
@@ -158,7 +163,7 @@
           <div class="about-inner">
             <div class="about_text"> Aliquam metus neque, bibendum sit amet porta at, consequat et enim. In ut turpis non ipsum rhoncus porttitor vel ac nunc. Maecenas interdum dignissim lorem quis auctor. Donec sit amet nulla nisl, aliquam pretium ipsum. Pellentesque sodales
               ipsum et enim rutrum adipiscing. Quisque tincidunt mattis sapien, vel posuere.</div>
-            <div class="btn_learn"><a href="#">Learn more</a></div>
+            <a href="#" class="btn_learn_link"><div class="btn_learn">Learn more</div></a>
           </div>
         </div>
       </div>
@@ -178,6 +183,7 @@
 
   <div class="team" id="team">
     <div class="container">
+
       <div class="row team_row">
         <div class="col-xs-12 col-sm-12 col-md-4"></div>
         <div class="col-xs-12 col-sm-12 col-md-4">
@@ -185,403 +191,346 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4"></div>
       </div>
-      <div class="row">
-        <div class="col-xs-3 col-sm-4 col-md-5"></div>
-        <div class="col-xs-3 col-sm-2 col-md-1">
-          <div class="img_arrow_left prevBtn"></div>
+
+
+      <div id="owl-demo" class="owl-carousel owl-theme">
+
+          <div class="item teammember">
+            <div>
+            <div class="team_img team1"></div>
+            <h4>Ellay</h4>
+            <span>CEO / Marketing Guru</span>
+            <div class="social"><div class="btn-fb" role="button"></div> <div class="btn-gg" role="button"></div></div>
+          </div>
         </div>
-        <div class="col-xs-3 col-sm-2 col-md-1">
-          <div class="img_arrow_right nextBtn"></div>
+
+          <div class="item teammember">
+            <div class="team_img team2"></div>
+            <h4>Anne</h4>
+            <span>Sales Guru</span>
+            <div class="social"><div class="btn-fb" role="button"></div> <div class="btn-gg" role="button"></div></div>
+          </div>
+
+          <div class="item teammember">
+            <div class="team_img team3"></div>
+            <h4>Sylvia</h4>
+            <span>PR Guru</span>
+            <div class="social"><div class="btn-fb" role="button"></div> <div class="btn-gg" role="button"></div></div>
+          </div>
+
+          <div class="item teammember">
+            <div class="team_img team4"></div>
+            <h4>Alex</h4>
+            <span>Front-End Developer</span>
+            <div class="social"><div class="btn-fb" role="button"></div> <div class="btn-gg" role="button"></div></a></div>
+          </div>
+
+          <div class="item teammember">
+            <div class="team_img team5"></div>
+            <h4>Olivia</h4>
+            <span>Programmer</span>
+            <div class="social"><div class="btn-fb" role="button"></div> <div class="btn-gg" role="button"></div></div>
+          </div>
+
+          <div class="item teammember">
+            <div class="team_img team6"></div>
+            <h4>Lisa</h4>
+            <span>Translator</span>
+            <div class="social"><div class="btn-fb" role="button"></div> <div class="btn-gg" role="button"></div></div>
+          </div>
+
+
         </div>
-        <div class="col-xs-3 col-sm-4 col-md-5"></div>
+
+
+
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="slider">
+    <div class="skills" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="img_skills"></div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="row progress-row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <div class="progress-content">
+              <div class="progress_title">Web design</div>
+              <div class="progress_value">90%</div>
+              <div class="bar-border">
+                <div class="bar1" role="progressbar" style="width: 0%">
+                  90%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="progress-content">
+              <div class="progress_title">Graphic Design</div>
+              <div class="progress_value">70%</div>
+              <div class="bar-border">
+                <div class="bar2" role="progressbar" style="width: 0%;">
+                  70%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
 
-            <ul class="team_list">
+        <div class="row progress-row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <div class="progress-content">
+              <div class="progress_title">html/css </div>
+              <div class="progress_value">75%</div>
+              <div class="bar-border">
+                <div class="bar3" role="progressbar" style="width: 0%;">
+                  75%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="progress-content">
+              <div class="progress_title">ui/ux</div>
+              <div class="progress_value">85%</div>
+              <div class="bar-border">
+                <div class="bar4" role="progressbar" style="width: 0%;">
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
 
-              <li class="team_list_item">
-                <div class="row">
+    <div class="services animated animatedEntrance" id="services">
+      <div class="container">
+        <div class="row  services-row">
+          <div class="col-md-12">
+            <div class="icon_services animated" data-animation="bounce"></div>
+            <div class="text_services">Our services will lorem and ipsum your aliquam </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                  <div class="col-md-4">
-                    <div class="team_content">
-                      <img src="images/Mugshot.png" alt="foto">
-                      <div class="caption">
-                        <h3>Anne Hathaway</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <div>
-                          <a href="#" class="btn btn-fb" role="button"></a>
-                          <a href="#" class="btn btn-gg" role="button"></a>
-                        </div>
-                      </div>
-                    </div>
+    <div class="statistics">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 stat_row">
+            <div class="stat">
+              <div class="stat-nr">365</div>
+              <div class="stat_text">lorem ipsum </div>
+            </div>
+            <div class="stat">
+              <div class="stat-nr">98%</div>
+              <div class="stat_text">lorem ipsum </div>
+            </div>
+            <div class="stat">
+              <div class="stat-nr">69</div>
+              <div class="stat_text">lorem ipsum </div>
+            </div>
+            <div class="stat">
+              <div class="stat-nr">1,642</div>
+              <div class="stat_text">lorem ipsum </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active carous-item">
+                  <div class="row">
+                    <div class="col-sm-2 col-md-5"></div>
+                    <div class="col-sm-8 col-md-2 test_content"><img src="images/testimonial1.png" alt="testimonial"></div>
+                    <div class="col-sm-2 col-md-5"></div>
                   </div>
-
-                  <div class="col-md-4">
-                    <div class="team_content">
-                      <img src="images/Mugshot.png" alt="foto">
-                      <div class="caption">
-                        <h3>Anne Hathaway</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <div>
-                          <a href="#" class="btn btn-fb" role="button"></a>
-                          <a href="#" class="btn btn-gg" role="button"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4">
-                    <div class="team_content">
-                      <img src="images/Mugshot.png" alt="foto">
-                      <div class="caption">
-                        <h3>Anne Hathaway</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <div>
-                          <a href="#" class="btn btn-fb" role="button"></a>
-                          <a href="#" class="btn btn-gg" role="button"></a>
-                        </div>
-                      </div>
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1  ">
+                      <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
+                      <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
                     </div>
                   </div>
                 </div>
-              </li>
-
-
-              <li class="team_list_item">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="team_content">
-                      <img src="images/Mugshot.png" alt="foto">
-                      <div class="caption">
-                        <h3>Ella</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <div>
-                          <a href="#" class="btn btn-fb" role="button"></a>
-                          <a href="#" class="btn btn-gg" role="button"></a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="item carous-item">
+                  <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-sm-12 col-md-2 test_content"><img src="images/testimonial2.png" alt="testimonial"></div>
+                    <div class="col-md-5"></div>
                   </div>
-
-                  <div class="col-md-4">
-                    <div class="team_content">
-                      <img src="images/Mugshot.png" alt="foto">
-                      <div class="caption">
-                        <h3>Ella</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <div>
-                          <a href="#" class="btn btn-fb" role="button"></a>
-                          <a href="#" class="btn btn-gg" role="button"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4">
-                    <div class="team_content">
-                      <img src="images/Mugshot.png" alt="foto">
-                      <div class="caption">
-                        <h3>Ellay</h3>
-                        <p>CEO / Marketing Guru</p>
-                        <div>
-                          <a href="#" class="btn btn-fb" role="button"></a>
-                          <a href="#" class="btn btn-gg" role="button"></a>
-                        </div>
-                      </div>
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1  ">
+                      <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
+                      <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
                     </div>
                   </div>
                 </div>
-              </li>
+                <div class="item carous-item">
+                  <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class=" col-sm-12 col-md-2 test_content"><img src="images/testimonial3.png" alt="testimonial"></div>
+                    <div class="col-md-5"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1  ">
+                      <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
+                      <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row portfolio_row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="img_portfolio"></div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="row portfolio_btns">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <ul class="btns">
+              <li class="select btn_all">All</li>
+              <li class="select btn_web">web</li>
+              <li class="select btn_apps">apps</li>
+              <li class="select btn_icons">icons</li>
             </ul>
           </div>
+          <div class="col-md-4"></div>
         </div>
+
+        <div id="gallery" class="clearfix">
+          <ul class="first">
+            <li class="portfolio_item appimg">
+              <div class="container_portfolio"><img class="testowa" data-bsp-large-src="images/portflio_img1big.png" src="images/portflio_img1.png" />
+                <div class="overlay"></div>
+              </div>
+              <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+              <p class="tags">apps, icons, ui </p>
+            </li>
+            <li class="portfolio_item webimg">
+              <div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img2big.png" src="images/portfolio_img2.png" />
+                <div class="overlay"></div>
+              </div>
+              <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+              <p class="tags">apps, icons, ui </p>
+            </li>
+            <li class="portfolio_item appimg">
+              <div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img3big.png" src="images/portfolio_img3.png" />
+                <div class="overlay"></div>
+              </div>
+              <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+              <p class="tags">apps, icons, ui </p>
+            </li>
+            <li class="portfolio_item iconimg">
+              <div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img4big.png" src="images/portfolio_img4.png" />
+                <div class="overlay"></div>
+              </div>
+              <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+              <p class="tags">apps, icons, ui </p>
+            </li>
+            <li class="portfolio_item appimg">
+              <div class="container_portfolio"><img data-bsp-large-src="images/portfolio_Img5big.png" src="images/portfolio_img5.png" />
+                <div class="overlay"></div>
+              </div>
+              <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+              <p class="tags">apps, icons, ui </p>
+            </li>
+            <li class="portfolio_item webimg">
+              <div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img6big.png" src="images/portfolio_img6.png" />
+                <div class="overlay"></div>
+              </div>
+              <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
+              <p class="tags">apps, icons, ui </p>
+            </li>
+        </div>
+
+        <div class="btn_watchmore"><a href="#">Watch more</a></div>
       </div>
     </div>
-  </div>
 
-  <div class="skills" id="skills">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <div class="img_skills"></div>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-      <div class="row progress-row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <div class="progress-content">
-            <div class="progress_title">Web design</div>
-            <div class="progress_value">90%</div>
-            <div class="bar-border">
-              <div class="bar1" role="progressbar" style="width: 0%">
-                90%
-              </div>
-            </div>
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row contact_row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="img_getintouch"></div>
           </div>
+          <div class="col-md-4"></div>
         </div>
-        <div class="col-md-5">
-          <div class="progress-content">
-            <div class="progress_title">Graphic Design</div>
-            <div class="progress_value">70%</div>
-            <div class="bar-border">
-              <div class="bar2" role="progressbar" style="width: 0%;">
-                70%
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
 
-      <div class="row progress-row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <div class="progress-content">
-            <div class="progress_title">html/css </div>
-            <div class="progress_value">75%</div>
-            <div class="bar-border">
-              <div class="bar3" role="progressbar" style="width: 0%;">
-                75%
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="progress-content">
-            <div class="progress_title">ui/ux</div>
-            <div class="progress_value">85%</div>
-            <div class="bar-border">
-              <div class="bar4" role="progressbar" style="width: 0%;">
-                85%
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </div>
+        <div class="row">
+          <div class="col-md-6">
 
-  <div class="services animated animatedEntrance" id="services">
-    <div class="container">
-      <div class="row  services-row">
-        <div class="col-md-12">
-          <div class="icon_services animated" data-animation="bounce"></div>
-          <div class="text_services">Our services will lorem and ipsum your aliquam </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <form class="form-horizontal" id="contactForm" method="post">
 
-  <div class="statistics">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 stat_row">
-          <div class="stat">
-            <div class="stat-nr">365</div>
-            <div class="stat_text">lorem ipsum </div>
-          </div>
-          <div class="stat">
-            <div class="stat-nr">98%</div>
-            <div class="stat_text">lorem ipsum </div>
-          </div>
-          <div class="stat">
-            <div class="stat-nr">69</div>
-            <div class="stat_text">lorem ipsum </div>
-          </div>
-          <div class="stat">
-            <div class="stat-nr">1,642</div>
-            <div class="stat_text">lorem ipsum </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="testimonial">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active carous-item">
-                <div class="row">
-                  <div class="col-md-5"></div>
-                  <div class="col-sm-12 col-md-2 test_content"><img src="images/testimonial1.png" alt="testimonial"></div>
-                  <div class="col-md-5"></div>
-                </div>
-                <div class="row">
-                  <div class="col-md-10 col-md-offset-1  ">
-                    <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                      <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
-                    <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
-                  </div>
+              <div class="form-group row">
+                <div class="col-sm-12 col-md-12">
+                  <input type="email" class="form-control" id="inputEmail3" id="emailInput" placeholder="Email">
                 </div>
               </div>
-              <div class="item carous-item">
-                <div class="row">
-                  <div class="col-md-5"></div>
-                  <div class="col-sm-12 col-md-2 test_content"><img src="images/testimonial2.png" alt="testimonial"></div>
-                  <div class="col-md-5"></div>
-                </div>
-                <div class="row">
-                  <div class="col-md-10 col-md-offset-1  ">
-                    <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                      <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
-                    <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
-                  </div>
+
+              <div class="form-group row">
+                <div class="col-sm-12 col-md-12">
+                  <input type="password" class="form-control" id="inputPassword3" id="passwordInput" placeholder="Password">
                 </div>
               </div>
-              <div class="item carous-item">
-                <div class="row">
-                  <div class="col-md-5"></div>
-                  <div class=" col-sm-12 col-md-2 test_content"><img src="images/testimonial3.png" alt="testimonial"></div>
-                  <div class="col-md-5"></div>
-                </div>
-                <div class="row">
-                  <div class="col-md-10 col-md-offset-1  ">
-                    <div class="test_text_title">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                      <br> condimentum. Duis mollis, est non commodo luctus, nisi erat </div>
-                    <div class="test_text">LESALE CHRISTOPER, PINTEREST </div>
-                  </div>
+
+              <div class="form-group row">
+                <textarea class="col-sm-12 col-md-12 form-control" rows="7" id="comment" id="messageInput" placeholder="Your message"></textarea>
+              </div>
+
+              <div class="error"></div>
+
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <button type="submit" class="btn-submit">Send email</button>
                 </div>
               </div>
-            </div>
+
+            </form>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="row portfolio_row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <div class="img_portfolio"></div>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-      <div class="row portfolio_btns">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <ul class="btns">
-            <li class="select btn_all">All</li>
-            <li class="select btn_web">web</li>
-            <li class="select btn_apps">apps</li>
-            <li class="select btn_icons">icons</li>
-          </ul>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-
-      <div id="gallery" class="clearfix">
-      <ul class="first">
-        <li class="portfolio_item appimg"><div class="container_portfolio"><img class="testowa" data-bsp-large-src="images/portflio_img1big.png" src="images/portflio_img1.png"/>
-          <div class="overlay"></div>
-        </div>
-          <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p>
-        </li>
-        <li class="portfolio_item webimg"><div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img2big.png" src="images/portfolio_img2.png"/>
-          <div class="overlay"></div>
-        </div>
-        <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p>
-        </li>
-        <li class="portfolio_item appimg"><div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img3big.png" src="images/portfolio_img3.png"/>
-          <div class="overlay"></div>
-        </div>
-          <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p>
-        </li>
-        <li class="portfolio_item iconimg"><div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img4big.png" src="images/portfolio_img4.png"/>
-          <div class="overlay"></div>
-        </div>
-          <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p>
-        </li>
-        <li class="portfolio_item appimg"><div class="container_portfolio"><img data-bsp-large-src="images/portfolio_Img5big.png" src="images/portfolio_img5.png"/>
-          <div class="overlay"></div>
-        </div>
-        <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p>
-        </li>
-        <li class="portfolio_item webimg"><div class="container_portfolio"><img data-bsp-large-src="images/portfolio_img6big.png" src="images/portfolio_img6.png"/>
-          <div class="overlay"></div>
-        </div>
-          <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
-          <p class="tags">apps, icons, ui </p>
-        </li>
-    </div>
-
-      <div class="btn_watchmore"><a href="#">Watch more</a></div>
-    </div>
-  </div>
-
-  <div class="contact" id="contact">
-    <div class="container">
-      <div class="row contact_row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <div class="img_getintouch"></div>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-
-          <form class="form-horizontal" id="contactForm" method="post">
-
-            <div class="form-group row">
-              <div class="col-sm-12 col-md-12">
-                <input type="email" class="form-control" id="inputEmail3" id="emailInput" placeholder="Email">
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <div class="col-sm-12 col-md-12">
-                <input type="password" class="form-control" id="inputPassword3" id="passwordInput" placeholder="Password">
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <textarea class="col-sm-12 col-md-12 form-control" rows="7" id="comment" id="messageInput" placeholder="Your message"></textarea>
-            </div>
-
-            <div class="error"></div>
-
-            <div class="form-group row">
-              <div class="col-sm-12">
-                <button type="submit" class="btn-submit">Send email</button>
-              </div>
-            </div>
-
-          </form>
-        </div>
-
-        <div class="col-md-6">
-          <div class="contact_info row">
-            <div class="col-md-12">
-              <p class="info"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</h4>
-                <br>
-                <h4 class="address"> 1600 Pennsylvania Ave NW, Washington,<br>DC 20500, United States of America.<br><br> T: (202) 456-1111<br> M: (202) 456-1212<br></p>
+          <div class="col-md-6">
+            <div class="contact_info row">
+              <div class="col-md-12">
+                <p class="info"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</h4>
+                  <br>
+                  <h4 class="address"> 1600 Pennsylvania Ave NW, Washington,<br>DC 20500, United States of America.<br><br> T: (202) 456-1111<br> M: (202) 456-1212<br></p>
             </div>
           </div>
             <div class="row">
@@ -604,7 +553,7 @@
   <script src="js/jquery.bsPhotoGallery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/waypoints.min.js"></script>
-  <script src="js/owl-carousel/owl.carousel.js"></script>
+  <script src="owl-carousel/owl.carousel.js"></script>
   <script src="js/apps.js"></script>
 </body>
 

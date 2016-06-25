@@ -184,24 +184,36 @@ body {
   margin: 0 auto;
 }
 
-.feat_btn:hover {
-  transform: scale(1.2);
+.btn_love {
+  background: url("../images/btn_love1.png");
 }
 
-.btn_love {
-  background: url("../images/btn_love.png");
+.btn_love:hover {
+  background: url("../images/btn_love_pink.png");
 }
 
 .btn_clean {
   background: url("../images/btn_clean.png");
 }
 
+.btn_clean:hover {
+  background: url("../images/btn_clean_pink.png");
+}
+
 .btn_easy {
   background: url("../images/btn_easy.png");
 }
 
+.btn_easy:hover {
+  background: url("../images/btn_easy_pink.png");
+}
+
 .btn_responsive {
   background: url("../images/btn_responsive.png");
+}
+
+.btn_responsive:hover {
+  background: url("../images/btn_responsive_pink.png");
 }
 
 .feat-title {
@@ -254,17 +266,17 @@ body {
   height: 72px;
   background: #9f449b;
   border-radius: 10px;
-  margin-top: 130px;
+  margin-top: 60%;
   box-shadow: 0 5px #6b2e68;
-  align-self: stretch;
-}
-
-.btn_learn a {
-  text-decoration: none;
   color: white;
   font-size: 20px;
   line-height: 72px;
-  padding-left: 64px;
+  text-align: center;
+}
+
+.btn_learn_link {
+  position: absolute;
+  left: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -309,27 +321,9 @@ body {
   margin: 0 auto;
 }
 
-[class^="img_arrow"] {
-  width: 65px;
-  height: 70px;
-  margin-top: 60px;
-  margin-bottom: 100px;
-}
-
-.img_arrow_left {
-  background: url("../images/arrow_left.png") no-repeat;
-}
-
-.img_arrow_right {
-  background: url("../images/arrow_right.png") no-repeat;
-}
-
-.team_content {
-  text-align: center;
-}
-
 .btn-fb,
 .btn-gg {
+  display: inline-block;
   width: 48px;
   height: 48px;
   margin: 20px;
@@ -343,22 +337,52 @@ body {
   background: url("../images/g1.png") no-repeat;
 }
 
-.slider {
-  width: 910px;
-  height: 425px;
-  overflow: hidden;
-  margin: 0 auto;
+#owl-demo .item {
+  padding: 30px 0px;
+  margin: o auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
 }
 
-.team_list {
-  list-style: none;
-  position: relative;
-  width: 2550px;
+.owl-item {
+  color: black;
 }
 
-.team_list_item {
-  float: left;
-  width: 870px;
+.team_img {
+  width: 251px;
+  height: 251px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.team_img:hover {
+  cursor: pointer;
+}
+
+.team1 {
+  background: url("../images/team1.png") no-repeat;
+}
+
+.team2 {
+  background: url("../images/team2.png") no-repeat;
+}
+
+.team3 {
+  background: url("../images/team3.png") no-repeat;
+}
+
+.team4 {
+  background: url("../images/team4.png") no-repeat;
+}
+
+.team5 {
+  background: url("../images/team5.png") no-repeat;
+}
+
+.team6 {
+  background: url("../images/team6.png") no-repeat;
 }
 
 /*skills*/
@@ -545,11 +569,12 @@ body {
   margin-top: 50px;
 }
 
-.test_content {
+.test_content img {
   margin: 0 auto 50px;
+  display: block;
 }
 
-.carousel-indicators li {
+#carousel-example-generic .carousel-indicators li {
   background-color: #000\9;
   background-color: #337ab7;
   border: 1px solid #555;

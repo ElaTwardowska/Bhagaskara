@@ -154,21 +154,30 @@ body {
   width: 172px;
   height: 186px;
   margin: 0 auto;
-&:hover {
-  transform: scale(1.2);
-  }
 }
 .btn_love {
-  background: url("../images/btn_love.png");
+  background: url("../images/btn_love1.png");
+&:hover {
+  background: url("../images/btn_love_pink.png");
+ }
 }
 .btn_clean {
   background: url("../images/btn_clean.png");
+  &:hover {
+    background: url("../images/btn_clean_pink.png");
+   }
 }
 .btn_easy {
   background: url("../images/btn_easy.png");
+  &:hover {
+    background: url("../images/btn_easy_pink.png");
+   }
 }
 .btn_responsive {
   background: url("../images/btn_responsive.png");
+  &:hover {
+    background: url("../images/btn_responsive_pink.png");
+   }
 }
 .feat-title {
   color: $main_font_color;
@@ -215,17 +224,18 @@ body {
   height: 72px;
   background: $main-deco-color;
   border-radius: 10px;
-  margin-top: 130px;
+  margin-top: 60%;
   box-shadow: 0 5px #6b2e68;
-  align-self: stretch;
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    line-height: 72px;
-    padding-left: 64px;
-  }
+  color: white;
+  font-size: 20px;
+  line-height: 72px;
+  text-align: center;
 }
+.btn_learn_link {
+position: absolute;
+left: 30px;
+}
+
 @media (max-width:1200px) {
   .btn_learn {
     margin-top: 0;
@@ -263,48 +273,65 @@ body {
   height: 114px;
   margin: 0 auto;
 }
-[class^="img_arrow"] {
-  width: 65px;
-  height: 70px;
-  margin-top: 60px;
-  margin-bottom: 100px;
-}
-.img_arrow_left {
-  background: url("../images/arrow_left.png")no-repeat;
-}
-.img_arrow_right {
-  background: url("../images/arrow_right.png")no-repeat;
-}
-.team_content {
-  text-align: center;
-}
+
 .btn-fb,
 .btn-gg {
+  display: inline-block;
   width: 48px;
   height: 48px;
   margin: 20px;
 }
+
 .btn-fb {
   background: url("../images/fb1.png") no-repeat;
 }
 .btn-gg {
   background: url("../images/g1.png")no-repeat;
 }
-.slider {
-  width: 910px;
-  height: 425px;
-  overflow: hidden;
-  margin: 0 auto;
+
+#owl-demo {
+  .item {
+    padding: 30px 0px;
+    margin: o auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+ }
+
+ .owl-item {
+   color: black;
+ }
+.team_img {
+  width:251px;
+  height: 251px;
+  margin: 60px auto;
+  text-align: center;
+ &:hover {
+   cursor: pointer;
+ }}
+
+.team1 {
+    background: url("../images/team1.png")no-repeat;
 }
-.team_list {
-  list-style: none;
-  position: relative;
-  width: 2550px;
+.team2 {
+    background: url("../images/team2.png")no-repeat;
 }
-.team_list_item {
-  float: left;
-  width: 870px; // margin-right:50px;
+.team3 {
+    background: url("../images/team3.png")no-repeat;
 }
+.team4 {
+    background: url("../images/team4.png")no-repeat;
+}
+.team5 {
+    background: url("../images/team5.png")no-repeat;
+}
+.team6 {
+    background: url("../images/team6.png")no-repeat;
+}
+
+
 /*skills*/
 .skills {
   margin-top: 150px;
@@ -464,14 +491,20 @@ body {
   margin-top: 50px;
 }
 .test_content {
-  margin: 0 auto 50px;
+  img {
+    margin: 0 auto 50px;
+    display: block;
+  }
 }
-.carousel-indicators {
-  li {
-    background-color: #000\9;
-    background-color: #337ab7;
-    border: 1px solid #555;
-    border-radius: 10px;
+
+#carousel-example-generic {
+  .carousel-indicators {
+    li {
+      background-color: #000\9;
+      background-color: #337ab7;
+      border: 1px solid #555;
+      border-radius: 10px;
+    }
   }
 }
 /*portfolio*/

@@ -1,6 +1,6 @@
 $(function() {
 
-      //sticky menu
+//sticky menu
 
       var nav = $(".menu-row");
       var menu = $(".menu-content");
@@ -25,7 +25,7 @@ $(function() {
         }
       });
 
-      //scroll
+//scroll
 
       var scroll = $(".scroll");
                 scroll.on("click", function(event){
@@ -34,43 +34,30 @@ $(function() {
                     }, 600);
                 });
 
-      //slider
+//slider - Owl carousel
 
-      var slider = $("div.slider");
-      var nextBtn = $(".nextBtn");
-      var prevBtn = $(".prevBtn");
-      var teamItems = $(".team_list_item");
-      var list = $(".team_list");
-      var currentItem = 0;
-      var teamItemsWidth = teamItems.width();
 
-      console.log(teamItemsWidth);
+  function owlCar() {
 
-      nextBtn.click(function() {
-        changeSlide(-1);
-      });
-      prevBtn.click(function() {
-        changeSlide(1);
-      });
+    $("#owl-demo").owlCarousel({
+      navigation: true,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      items: 3,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [980, 2],
+      itemsTablet: [768, 2],
+      itemsTabletSmall: false,
+      itemsMobile: [479, 1],
+    });
+  }
+  owlCar();
 
-      function changeSlide(direction) {
-
-        currentItem += direction;
-        if (currentItem > teamItems.length - 1) {
-          currentItem = 0;
-        } else if (currentItem < 0) {
-          currentItem = teamItems.length - 1;
-        }
-        list.animate({
-          left: -(currentItem * teamItemsWidth)
-        });
-      }
-
-      //carousel
+  //carousel
 
       $('.carousel').carousel();
 
-      //animation - section SKILLS
+  //animation - section SKILLS
 
       var windowWidth = $(window).width();
       if (windowWidth > 1200) {
@@ -167,42 +154,42 @@ $(function() {
 
           //form
 
-          function formValidation() {
-
-
-            var form = $("#contactForm");
-            var emailInput = $("#emailInput");
-            var passwordInput = $("#passwordInput");
-            var messageInput = $("#messageInput");
-            var error = $(".error");
-
-            form.on("submit", function(e) {
-
-              e.preventDefault();
-            });
-
-            var email = emailInput.val();
-            var password = passwordInput.val();
-            var message = messageInput.val()
-            if (password.length > 5) {
-              if ((email.search("@") !== -1) && (email.search(".") !== -1)) {
-                if (message.length > 10) {
-                  error.text("formularz został wysłany")
-                } else {
-                  e.preventDefault();
-                  error.text("wiadomosc musi byc dluzsza niz 10 znakow")
-                }
-              } else {
-                e.preventDefault();
-                error.text("email musi zawirac @ i kropke");
-              }
-            } else {
-              e.preventDefault();
-              error.text("hasło musi miec więcej niż 5 znakow")
-            };
-
-          };
-
-          formValidation();
+          // function formValidation() {
+          //
+          //
+          //   var form = $("#contactForm");
+          //   var emailInput = $("#emailInput");
+          //   var passwordInput = $("#passwordInput");
+          //   var messageInput = $("#messageInput");
+          //   var error = $(".error");
+          //
+          //   form.on("submit", function(e) {
+          //
+          //     e.preventDefault();
+          //   });
+          //
+          //   var email = emailInput.val();
+          //   var password = passwordInput.val();
+          //   var message = messageInput.val()
+          //   if (password.length > 5) {
+          //     if ((email.search("@") !== -1) && (email.search(".") !== -1)) {
+          //       if (message.length > 10) {
+          //         error.text("formularz został wysłany")
+          //       } else {
+          //         e.preventDefault();
+          //         error.text("wiadomosc musi byc dluzsza niz 10 znakow")
+          //       }
+          //     } else {
+          //       e.preventDefault();
+          //       error.text("email musi zawirac @ i kropke");
+          //     }
+          //   } else {
+          //     e.preventDefault();
+          //     error.text("hasło musi miec więcej niż 5 znakow")
+          //   };
+          //
+          // };
+          //
+          // formValidation();
 
         });
