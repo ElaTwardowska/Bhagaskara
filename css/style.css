@@ -102,6 +102,7 @@ body {
 
 /*navbar*/
 .title2 {
+  display: inline-block;
   background: url("../images/bhagaskara_logo_2.png");
   width: 156px;
   height: 29px;
@@ -138,6 +139,7 @@ body {
 
 .menu-item a:hover {
   color: #9f449b;
+  text-decoration: none;
 }
 
 .menu-row {
@@ -716,15 +718,11 @@ a.controls {
   background: #9f449b;
   border-radius: 10px;
   box-shadow: 0 5px #6b2e68;
-  margin: 33px auto 50px;
-}
-
-.btn_watchmore a {
-  text-decoration: none;
   color: white;
   font-size: 20px;
   line-height: 72px;
-  padding-left: 64px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .img_getintouch {

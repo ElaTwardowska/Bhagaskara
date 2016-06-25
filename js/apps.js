@@ -94,7 +94,7 @@ $(function() {
 
 
       $('ul.first').bsPhotoGallery({
-        "classes": "col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xxs-12",
+        "classes": "col-lg-4 col-md-6 col-sm-6 col-xs-12 col-xxs-12",
         "hasModal": true
       });
 

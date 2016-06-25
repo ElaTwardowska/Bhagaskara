@@ -26,7 +26,7 @@
 <body class="noIE">
 
   <div class="cityview">
-    <div class="container">
+    <div class="container" id="top">
       <div class="row">
         <div class="col-xs-1 col-sm-2 col-md-3"></div>
         <div class="col-xs-10 col-sm-8 col-md-6">
@@ -91,12 +91,12 @@
     <div class="container menu-row">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-2 nav-title">
-          <div class="title2"></div>
+          <a href="#top"><div class="title2"></div></a>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3"></div>
         <div class="col-xs-12 col-sm-12 col-md-7 menu-elem">
           <ul class="menu-items">
-            <li class="menu-item"> <a href="#">Home</a> </li>
+            <li class="menu-item"><a href="#top">Home</a> </li>
             <li class="menu-item"><a href="#about">About</a></li>
             <li class="menu-item"><a href="#team">Team</a></li>
             <li class="menu-item"><a href="#services">Services</a></li>
@@ -163,7 +163,7 @@
           <div class="about-inner">
             <div class="about_text"> Aliquam metus neque, bibendum sit amet porta at, consequat et enim. In ut turpis non ipsum rhoncus porttitor vel ac nunc. Maecenas interdum dignissim lorem quis auctor. Donec sit amet nulla nisl, aliquam pretium ipsum. Pellentesque sodales
               ipsum et enim rutrum adipiscing. Quisque tincidunt mattis sapien, vel posuere.</div>
-            <a href="#" class="btn_learn_link"><div class="btn_learn">Learn more</div></a>
+            <a href="#about" class="btn_learn_link"><div class="btn_learn">Learn more</div></a>
           </div>
         </div>
       </div>
@@ -436,7 +436,7 @@
         <div id="gallery" class="clearfix">
           <ul class="first">
             <li class="portfolio_item appimg">
-              <div class="container_portfolio"><img class="testowa" data-bsp-large-src="images/portflio_img1big.png" src="images/portflio_img1.png" />
+              <div class="container_portfolio"><img data-bsp-large-src="images/portflio_img1big.png" src="images/portflio_img1.png" />
                 <div class="overlay"></div>
               </div>
               <h3 class="portfolio_title"> Neque Porro Quisquam </h3>
@@ -479,7 +479,7 @@
             </li>
         </div>
 
-        <div class="btn_watchmore"><a href="#">Watch more</a></div>
+        <a href="#portfolio"><div class="btn_watchmore">Watch more</div></a>
       </div>
     </div>
 
