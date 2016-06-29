@@ -1,5 +1,47 @@
 $(function() {
 
+//hamburger menu
+function btnMenuInit() {
+
+  $(".btn-menu").on("click", function(e) {
+    e.preventDefault();
+    $(".menu").toggleClass("hidden-menu");
+  });
+}
+
+function _showBtn() {
+  $(".btn-menu").removeClass("hidden-btn");
+}
+function _hideBtn() {
+  $(".btn-menu").addClass("hidden-btn")
+}
+function _showMenu() {
+  $(".menu").removeClass("hidden-menu");
+}
+function _hideMenu() {
+  $(".menu").addClass("hidden-menu")
+}
+
+function test_match_media_with_listener() {
+  var mq = window.matchMedia("(max-width: 767px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+
+  // media query change
+  function WidthChange(mediaQuery) {
+    if (mediaQuery.matches) {
+      _showBtn();
+      _hideMenu();
+    } else {
+      _hideBtn();
+      _showMenu();
+    }
+  }
+}
+
+btnMenuInit();
+test_match_media_with_listener();
+
 //sticky menu
 
       var nav = $(".menu-row");
@@ -94,7 +136,7 @@ $(function() {
 
 
       $('ul.first').bsPhotoGallery({
-        "classes": "col-lg-4 col-md-6 col-sm-6 col-xs-12 col-xxs-12",
+        "classes": "col-lg-4 col-md-4 col-sm-6 col-xs-12 col-xxs-12",
         "hasModal": true
       });
 
