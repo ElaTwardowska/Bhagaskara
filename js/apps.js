@@ -196,42 +196,42 @@ test_match_media_with_listener();
 
           //form
 
-          // function formValidation() {
-          //
-          //
-          //   var form = $("#contactForm");
-          //   var emailInput = $("#emailInput");
-          //   var passwordInput = $("#passwordInput");
-          //   var messageInput = $("#messageInput");
-          //   var error = $(".error");
-          //
-          //   form.on("submit", function(e) {
-          //
-          //     e.preventDefault();
-          //   });
-          //
-          //   var email = emailInput.val();
-          //   var password = passwordInput.val();
-          //   var message = messageInput.val()
-          //   if (password.length > 5) {
-          //     if ((email.search("@") !== -1) && (email.search(".") !== -1)) {
-          //       if (message.length > 10) {
-          //         error.text("formularz został wysłany")
-          //       } else {
-          //         e.preventDefault();
-          //         error.text("wiadomosc musi byc dluzsza niz 10 znakow")
-          //       }
-          //     } else {
-          //       e.preventDefault();
-          //       error.text("email musi zawirac @ i kropke");
-          //     }
-          //   } else {
-          //     e.preventDefault();
-          //     error.text("hasło musi miec więcej niż 5 znakow")
-          //   };
-          //
-          // };
-          //
-          // formValidation();
+          function formValidation() {
+
+          
+            var form = $("#contactForm");
+            var emailInput = $("#emailInput");
+            var passwordInput = $("#passwordInput");
+            var messageInput = $("#messageInput");
+            var error = $(".error");
+
+            form.on("submit", function(e) {
+
+              e.preventDefault();
+            });
+
+            var email = emailInput.val();
+            var password = passwordInput.val();
+            var message = messageInput.val()
+            if (password.length > 5) {
+              if ((email.search("@") !== -1) && (email.search(".") !== -1)) {
+                if (message.length > 10) {
+                  error.text("formularz został wysłany")
+                } else {
+                  e.preventDefault();
+                  error.text("wiadomosc musi byc dluzsza niz 10 znakow")
+                }
+              } else {
+                e.preventDefault();
+                error.text("email musi zawirac @ i kropke");
+              }
+            } else {
+              e.preventDefault();
+              error.text("hasło musi miec więcej niż 5 znakow")
+            };
+
+          };
+
+          formValidation();
 
         });
